@@ -1,45 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masala Exports - Authentic Indian Spices</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        header { background: #8B0000; color: white; padding: 1rem 2rem; }
+        nav a { color: white; margin: 0 1rem; text-decoration: none; }
+        .hero {
+            background: url('masala-hero.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+        .section { padding: 4rem 2rem; text-align: center; }
+        .products, .about, .contact { background: #f9f9f9; margin-bottom: 1rem; }
+        .product-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; }
+        .product { width: 250px; background: white; padding: 1rem; border: 1px solid #ddd; border-radius: 8px; }
+        footer { background: #333; color: white; padding: 2rem; text-align: center; }
+        button { background: #8B0000; color: white; padding: 0.5rem 1rem; border: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Masala Exports</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>IMC</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <section class="hero" id="home">
+        <h2>Authentic Indian Spices</h2>
+        <p>Exporting the flavor of India to the world</p>
+        <button>Explore Our Range</button>
+    </section>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <section class="section about" id="about">
+        <h2>About Us</h2>
+        <p>We are a leading exporter of premium quality Indian masalas. Our commitment to purity, tradition, and taste sets us apart. With decades of experience, we serve global clients with the rich flavors of India.</p>
+    </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  </body>
+    <section class="section products" id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="garam-masala.jpg" alt="Garam Masala" style="width:100%">
+                <h3>Garam Masala</h3>
+                <p>Perfect blend of ground spices for traditional Indian cooking.</p>
+            </div>
+            <div class="product">
+                <img src="turmeric.jpg" alt="Turmeric Powder" style="width:100%">
+                <h3>Turmeric Powder</h3>
+                <p>Pure, natural turmeric for health and flavor.</p>
+            </div>
+            <div class="product">
+                <img src="chili.jpg" alt="Red Chili Powder" style="width:100%">
+                <h3>Red Chili Powder</h3>
+                <p>Hot and vibrant spice to bring the heat.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@masalaexports.com | Phone: +91-9876543210</p>
+        <p>Address: Plot No. 12, Spices Industrial Area, Gujarat, India</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Masala Exports. All rights reserved.</p>
+    </footer>
+</body>
 </html>
